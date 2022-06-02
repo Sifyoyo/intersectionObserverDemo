@@ -1,0 +1,181 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+section{
+    position: relative;
+}
+
+
+.background{
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.last_background{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+section .show-background{
+    opacity: 1 ;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.txt_wrapper{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+section.intro div:first-of-type{
+    margin-top: 50vh;
+}
+
+p.txt_with_fade{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    margin: 0px auto;
+    padding: 10px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 22px;
+}
+
+.hideTxt{
+    opacity: 0;
+}
+
+.second-paragraph p:first-child{
+    margin: 0px auto 100px;
+}
+
+.second-paragraph p:last-child{
+    margin: 100px auto 0px;
+}
+
+.last-paragraph p:first-child{
+    margin: 0 auto 100px;
+}
+
+.last_div_wrapper{
+    background-color: white;
+    width: 100vw;
+}
+
+h1{
+    margin-top: 0;
+    font-size: 98px;
+    text-align: center;
+}
+
+h2{
+    margin-top: 20vh;
+    font-size: 58px;
+}
+
+.pageMargin{
+display: -ms-grid;
+display: grid;
+-ms-grid-columns: 0.7fr;
+grid-template-columns: 0.7fr;
+-webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+padding-bottom: 50px;
+}
+
+.containerAfterIntro{
+    background-color: white;
+}
+
+.firstParagraphAfterIntro{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+gap: 50px;
+}
+
+.firstParagraphAfterIntro p:nth-child(3){
+    font-weight: bold;
+}
+
+.firstParagraphAfterIntro div{
+    height: 400px;
+    width: 600px;
+    min-width: 375px;
+    min-height: 200px;
+}
+
+.firstParagraphAfterIntro img{
+    height: 400px;
+    width: 600px;
+    min-width: 375px;
+    min-height: 200px;
+}
+
+footer{
+    height: 10vh;
+    background-color: white;
+    border: 1px solid;
+    border-color: rgba(0,0,0,0.2);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.7fr;
+    grid-template-columns: 0.7fr;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+footer section{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    align-items: center;
+}
